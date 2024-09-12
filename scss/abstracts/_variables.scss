@@ -1,0 +1,40 @@
+// Asset Path
+$assetPath : "../images";
+$fontPath : "../webfonts";
+
+/* Font Family */
+$montserrat: 'Montserrat';
+
+/* Colors  */
+$primarycolor: #610206;
+$secondarycolor: #2C2C2C;
+$lightgreen: #DEF4E9;
+$white: #ffffff;
+$black: #13111E;
+$black1: #101010;
+$gray: #777;
+$blue: #1A75E8;
+$offwhite: #f5f5f5;
+$red: #E9241D;
+$green: #44EB5A;
+$textcolor: #2D3E50;
+$orange: #FFD070;
+
+
+$orderbg: #FE9901;
+$dispatchedbg: #B9C406;
+$deliveredbg: #64CC00;
+$cancelbg: #FC0001;
+$returnbg: #FE6400;
+$approvebg: #FFCC00;
+$inactivebg: #000000;
+$todaybg: #0050D6;
+$pendingbg: #09B4C3;
+$monthlybg: #009900;
+
+
+@mixin box-shadow-class {
+    -moz-box-shadow: 0px 10px 20px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.07);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.07);
+}

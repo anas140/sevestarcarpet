@@ -1,0 +1,66 @@
+
+.new-deisng {
+    padding: 70px 0;
+
+    @media (max-width: 767.98px) {
+        padding: 40px 0;
+    }
+}
+
+.slider-section {
+    width: 100%;
+    overflow: hidden;
+
+    .img-slider {
+
+        .custom-control {
+            margin: 50px 0 0;
+
+            .custom-prev, .custom-next {
+                background: transparent;
+                border: none;
+            }
+
+            .custom-prev {
+                
+            }
+
+            .custom-pagination {
+                width: auto !important;
+
+                .swiper-pagination-bullet {
+                    width: 8px;
+                    height: 8px;
+
+                    &.swiper-pagination-bullet-active {
+                        width: 12px;
+                        background: $secondarycolor;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .custom-next {
+
+            }
+        }
+    }
+
+    .text-animation {
+        width: 100%;
+        display: block;
+        animation: slide 30s linear infinite;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%); /* Image starts outside the left edge */
+    }
+    50% {
+        transform: translateX(0); /* Image fully visible in the middle */
+    }
+    100% {
+        transform: translateX(100%); /* Image slides out of view to the right */
+    }
+}

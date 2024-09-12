@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #a3a2af
+}
+
+.form-control::-moz-placeholder {
+  color: #a3a2af
+}
+
+.form-control:-ms-input-placeholder {
+  color: #a3a2af
+}
+
+.form-control:-moz-placeholder {
+  color: #a3a2af
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 32px;
+	color: $secondarycolor;
+	background: $white;
+}
+
+.wrapper {
+	margin: 0;
+	padding: 0; 
+	overflow: hidden
+}
+
+a {
+	color: $primarycolor;
+	text-decoration: underline;
+	cursor: pointer;
+	@include transition(all 0.3s ease-in-out);
+}
+
+a {
+
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.equal {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.equal > [class*='col-'], .equal > div , .equal > [class*='col-'], .equal > span {
+	display: flex;
+	flex-direction: column;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.background-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $black;
+	background-clip: content-box;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $orange;
+	@include border-radius(3px);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $orange
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1220px;
+    }
+}

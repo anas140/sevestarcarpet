@@ -1,0 +1,26 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// Vendors
+@import 'vendors/bootstrap/bootstrap';
+@import 'vendors/swiper/swiper';
+// @import 'vendors/fancybox/fancybox';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/buttons';
+
+// Layout
+@import 'layout/header';
+@import 'layout/forms';
+@import 'layout/footer';
+
+// Components
+@import 'components//card';
+@import 'components/back-to-top';
+
+// Pages
+@import 'pages/home';

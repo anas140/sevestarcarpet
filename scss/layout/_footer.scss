@@ -1,0 +1,42 @@
+footer {
+    background: $primarycolor;
+    padding: 40px 0 0;
+    color: $white;
+
+    h2 {
+        color: $white;
+    }
+
+    .foot-p {
+        color: $orange;
+    }
+
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        color: $orange;
+    }
+
+    .foot-bottom {
+        border-top: 1px solid #D9D9D6;
+        padding: 10px 0;
+
+        .social-wrap {
+
+            p {
+                padding-right: 80px;
+                position: relative;
+                margin-right: 20px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 64px;
+                    height: 1px;
+                    background: $white
+                }
+            }
+        }
+    }
+}
